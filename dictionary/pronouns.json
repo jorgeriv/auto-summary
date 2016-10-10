@@ -1,0 +1,30 @@
+"pronouns":{
+  "subject-personal":[
+    "i",
+    "you",
+    "he",
+    "she",
+    "it",
+    "we",
+    "you",
+    "they"
+  ],
+  "possessive": [
+    "mine",
+    "yours",
+    "his",
+    "hers",
+    "its",
+    "ours",
+    "theirs"
+  ],
+  "object-personal":[
+    "me",
+    "you",
+    "him",
+    "her",
+    "it",
+    "us",
+    "them"
+  ]
+}
