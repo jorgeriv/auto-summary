@@ -7,10 +7,10 @@ fs.readFile('./build-your-own-summary-tool.txt', 'utf8', function(err, file){
   if(err){
     return console.error(err);
   }
-  let pharagraphs = splitPharagraphs(file);
+  let paragraphs = splitPharagraphs(file);
   let tokens = [];
-  pharagraphs.forEach(function(pharagraph){
-    let _tokens = tokenize(pharagraph);
+  paragraphs.forEach(function(paragraph){
+    let _tokens = tokenize(paragraph);
     console.log(_tokens);
     tokens = [...tokens, ..._tokens];
   });
@@ -19,11 +19,11 @@ fs.readFile('./build-your-own-summary-tool.txt', 'utf8', function(err, file){
 });
 
 function splitPharagraphs(text){
-  let pharagraphs = text.split('\n');
-  pharagraphs = pharagraphs.filter(function(line){
+  let paragraphs = text.split('\n');
+  paragraphs = paragraphs.filter(function(line){
     return line.length > 1;
   });
-  return pharagraphs;
+  return paragraphs;
 }
 
 function tokenize(paragraph){
